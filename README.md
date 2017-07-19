@@ -1,5 +1,5 @@
 # This is a Dockerfile that builds a docker image of [Tensor Flow Object Detection Models](https://github.com/tensorflow/models/tree/master/object_detection)
-## WARNING! The detection of speed of this Docker image is much slower than . Please refer to [this thread](https://github.com/tensorflow/models/issues/1715) for more detail
+## WARNING! The detection speed of this Docker image is much slower than the speed of original publication. Please refer to [this thread](https://github.com/tensorflow/models/issues/1715) for details
 ## The current version supports CUDA8.0. Be sure you are using Nvidia Driver >= 367 
 
 
