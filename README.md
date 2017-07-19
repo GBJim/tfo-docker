@@ -2,6 +2,11 @@
 
 ## The current version supports CUDA8.0. Be sure you are using Nvidia Driver >= 367 
 
+
+<p align="center">
+  <img src="https://github.com/tensorflow/models/raw/master/object_detection/g3doc/img/kites_detections_output.jpg" width=676 height=450>
+</p>
+
 ## Build the image:
 1.Clone this repository
 ```Shell
