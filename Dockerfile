@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y  \
          && protoc object_detection/protos/*.proto --python_out=. \
          && cd object_detection/ \ 
          && python download_models.py \
+         && rm -rf *tar.gz \
          && apt-get clean
           
 ENV PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim 
