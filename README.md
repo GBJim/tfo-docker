@@ -1,7 +1,5 @@
 # This is a Dockerfile that builds a docker image of [Tensor Flow Object Detection Models](https://github.com/tensorflow/models/tree/master/object_detection)
 
-## WARNING! The detection speed of this Docker image is much SLOWER than the speed of original publication. Please refer to [this thread](https://github.com/tensorflow/models/issues/1715) for details
-
 ## The current version supports CUDA8.0. Be sure you are using Nvidia Driver >= 367 
 
 
@@ -40,13 +38,13 @@ python demo.py
 ## Models
 1.The following are models you can use.
 
-| Model name  | Speed | COCO mAP | Outputs |
+| Model name  | FPS | COCO mAP | Outputs |
 | ------------ | :--------------: | :--------------: | :-------------: |
-| [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) | fast | 21 | Boxes |
-| [ssd_inception_v2_coco](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_11_06_2017.tar.gz) | fast | 24 | Boxes |
-| [rfcn_resnet101_coco](http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_11_06_2017.tar.gz)  | medium | 30 | Boxes |
-| [faster_rcnn_resnet101_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz) | medium | 32 | Boxes |
-| [faster_rcnn_inception_resnet_v2_atrous_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017.tar.gz) | slow | 37 | Boxes |
+| [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) | 15.55 | 21 | Boxes |
+| [ssd_inception_v2_coco](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_11_06_2017.tar.gz) | 14.07 | 24 | Boxes |
+| [rfcn_resnet101_coco](http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_11_06_2017.tar.gz)  | 4.93 | 30 | Boxes |
+| [faster_rcnn_resnet101_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz) | 3.79 | 32 | Boxes |
+| [faster_rcnn_inception_resnet_v2_atrous_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017.tar.gz) |  | 37 | Boxes |
 
 2.To specify the model you want to use. For example, set the 3rd model RFCN-RESNET101
 ```Shell
