@@ -38,7 +38,7 @@ python demo.py
 ## Models
 1.The following are models you can use.
 
-| Model name  | FPS | COCO mAP |
+| Model name  | FPS(1280*720) | COCO mAP |
 | ------------ | :--------------: | :--------------: |
 | [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) | 15.55 | 21 |
 | [ssd_inception_v2_coco](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_11_06_2017.tar.gz) | 14.07 | 24 | 
