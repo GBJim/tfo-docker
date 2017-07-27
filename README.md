@@ -38,13 +38,13 @@ python demo.py
 ## Models
 1.The following are models you can use.
 
-| Model name  | FPS(1280*720) | COCO mAP |
-| ------------ | :--------------: | :--------------: |
-| [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) | 15.55 | 21 |
-| [ssd_inception_v2_coco](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_11_06_2017.tar.gz) | 14.07 | 24 | 
-| [rfcn_resnet101_coco](http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_11_06_2017.tar.gz)  | 4.93 | 30 | 
-| [faster_rcnn_resnet101_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz) | 3.79 | 32 | 
-| [faster_rcnn_inception_resnet_v2_atrous_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017.tar.gz) | 0.97 | 37 |
+| Model name  | FPS(1280*720) | GPU Memory| COCO mAP |
+| ------------ | :--------------: | :--------------: | :--------------:|
+| [ssd_mobilenet_v1_coco](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_11_06_2017.tar.gz) | 15.55 |520 MB| 21 |
+| [ssd_inception_v2_coco](http://download.tensorflow.org/models/object_detection/ssd_inception_v2_coco_11_06_2017.tar.gz) | 14.07 | 6858 MB | 24 | 
+| [rfcn_resnet101_coco](http://download.tensorflow.org/models/object_detection/rfcn_resnet101_coco_11_06_2017.tar.gz)  | 4.93 | 5578 MB|30 | 
+| [faster_rcnn_resnet101_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_resnet101_coco_11_06_2017.tar.gz) | 3.79 | 5578 MB | 32 | 
+| [faster_rcnn_inception_resnet_v2_atrous_coco](http://download.tensorflow.org/models/object_detection/faster_rcnn_inception_resnet_v2_atrous_coco_11_06_2017.tar.gz) | 0.97 | 7626 MB| 37 |
 
 2.To specify the model you want to use. For example, set the 3rd model RFCN-RESNET101
 ```Shell
