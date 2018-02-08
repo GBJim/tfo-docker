@@ -1,4 +1,4 @@
-# This is a Dockerfile that builds a docker image of [Tensor Flow Object Detection Models](https://github.com/tensorflow/models/tree/master/object_detection)
+# This is a Dockerfile that builds a docker image for Training [Tensor Flow Object Detection Models](https://github.com/tensorflow/models/tree/master/object_detection)
 
 ## The current version supports CUDA8.0. Be sure you are using Nvidia Driver >= 367 
 
@@ -21,6 +21,3 @@ docker build -t <IMAGE_NAME_YOU_LIKE> .
 ```Shell 
 nvidia-docker run -tiv /home/chunhao/data:/root/data -p <PORT_YOU_LIKE>:8888 <IMAGE_NAME_YOU_LIKE>
 ```
-
-
-
