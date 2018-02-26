@@ -7,11 +7,15 @@ RUN apt-get update && apt-get install -y  \
          python-lxml \
 	 python-tk \
          libopencv-dev python-opencv  \
-         && pip install jupyter \
+         && pip install jupyter Cython\
          && cd ~/ \
-         && git clone https://github.com/GBJim/tfo_training.git \
+         && git clone --recursive https://github.com/GBJim/tfo_training.git \
 	 && mv tfo_training models \
-	 && cd models/research \
+	 && cd models/cocoapi/PythonAPI \
+	 && make \
+	 && rm -rf /root/models/research/object_detection/pycocotools \
+	 && mv pycocotools /root/models/research/object_detection \
+	 && cd /root/models/research \
          && protoc object_detection/protos/*.proto --python_out=. \
          && cd object_detection/ \ 
          && python download_models.py \
